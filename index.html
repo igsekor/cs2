@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Programming</title>
+    <title>Презентация к курсу «Программирование» (2 семестр, бакалавариат, ФГБОУ ВО «ВГУ»)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
@@ -18,12 +18,155 @@
         <p>Игорь Коровченко</p>
     </header>
 
-    <section class="slide">
-        <!-- Create your first slide -->
+    <section class="slide black" id="s0-1">
+        <h2 class="shout">Программирование</h2>
+        <style>
+            #s0-1 .shout {
+                font-size: 3em;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="s0-2">
+        <figure>
+            <img src="images/korovchenko.png" alt="" height="240">
+            <caption>
+                <h3>Коровченко Игорь Сергеевич, к.ф.-м.н., доцент</h3>
+                <hr>
+                <p>На всех платформах — <a href="https://github.com/lachlanmacphee/tursim">@igsekor</a></p>
+            </caption>
+        </figure>
+    </section>
+
+    <section class="slide" id="s0-3">
+        <h2>Схема работы</h2>
+        <ul>
+            <li>Основной поток (18 недель)
+                <ul>
+                    <li>Лекции</li>
+                    <li>Лабораторные занятия (практика)</li>
+                    <li>Домашние работы</li>
+                </ul>
+            </li>
+            <li></li>
+            <li>Стартовый поток (6 недель)</li>
+            <li>Продвинутый поток (11 недель)</li>
+            <li>Экзамен (тест — 30 вопросов за 60 минут)</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="s0-4">
+        <h2>Структура курса</h2>
+        <div class="columns two">
+            <ol type="1" start="1">
+                <li>Введение (1–2)</li>
+                <li>Типы данных и функции (3)</li>
+                <li>Указатели и работа с памятью (4)</li>
+                <li>Линейные структуры данных (5)</li>
+                <li>Численные алгоритмы (6)</li>
+            </ol>
+            <ol type="1" start="6">
+                <li>Строковые алгоритмы (7)</li>
+                <li>Нелинейн. стр-ры данных (8–11)</li>
+                <li>Веб-технологии (12–13)</li>
+                <li>Основные понятия ООП (14–16)</li>
+                <li>Тестирование ПО (17–18)</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="slide gray" id="s0-4">
+        <h2 class="shout">Введение</h2>
+        <style>
+            #s0-4 .shout {
+                font-size: 3em;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="s1-1">
+        <h2>Что такое программирование?</h2>
+        <p><strong>Программирование</strong> — это процесс создания компьютерных программ, которые выполняют определенные задачи или решают проблемы. Это искусство и наука написания инструкций, которые компьютер может понять и выполнить.</p>
+    </section>
+
+    <section class="slide" id="s1-2">
+        <h2>Что такое алгоритм?</h2>
+        <p><strong>Алгоритм</strong> — это инструк­ция, точ­ное опи­са­ние спо­со­ба дей­ст­вия с ис­поль­зо­ва­ни­ем про­стых, об­ще­по­нят­ных эле­мен­тов; это последовательность шагов, описывающая процесс решения задачи. Алгоритмы используются в программировании для описания логики выполнения операций.</p>
+    </section>
+    
+    <section class="slide" id="s1-3">
+        <h2>Первооткрыватели</h2>
+        <div class="columns three">
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Thomas_Phillips_-_Mary_Fairfax%2C_Mrs_William_Somerville%2C_1780_-_1872._Writer_on_science_-_Google_Art_Project.jpg/330px-Thomas_Phillips_-_Mary_Fairfax%2C_Mrs_William_Somerville%2C_1780_-_1872._Writer_on_science_-_Google_Art_Project.jpg" alt="Портрет Мэри Сомервилль работы Томаса Филлипса (1834)" height="290">
+                <caption><p>Мэри Сомервилль</p></caption>
+            </figure>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/330px-Ada_Lovelace_portrait.jpg" alt="Портрет Ады Лавлейс авторства Альфреда Шалона, около 1840 года" height="290">
+                <caption><p>Ада Лавлейс</p></caption>
+            </figure>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Babbage1.jpg/500px-Babbage1.jpg" alt="Портрет Чарлза Бэббиджа" height="290">
+                <caption><p>Чарлз Бэббидж</p></caption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide" id="s1-4">
+        <h2>Универсальный вычислитель</h2>
+        <div class="columns two">
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/050114_2529_difference.jpg/500px-050114_2529_difference.jpg" alt="Первая полностью построенная разностная машина в лондонском Музее науки" height="283">
+                <caption><p>Разностная машина</p></caption>
+            </figure>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/250px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg" alt="Первая полностью построенная разностная машина в лондонском Музее науки" height="283">
+                <caption><p>ENIAC</p></caption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide" id="s1-5">
+        <h2>Свойства алгоритмов</h2>
+        <ul>
+            <li><strong>Дискретность</strong> — алгоритм состоит из отдельных шагов</li>
+            <li><strong>Определённость</strong> — каждый шаг алгоритма должен быть точно определён</li>
+            <li><strong>Конечность</strong> — алгоритм должен завершаться за конечное время</li>
+            <li><strong>Универсальность</strong> — алгоритм должен быть применим к различным наборам входных данных</li>
+            <li><strong>Результативность</strong> — алгоритм должен приводить к результату</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="s1-6">
+        <h2>Машина Тьюринга</h2>
+        <iframe src="https://math.hws.edu/eck/js/turing-machine/TM.html" frameborder="0" width="820" height="330"></iframe>
+    </section>
+
+    <section class="slide" id="s1-7">
+        <h2>Алгорифм Маркова</h2>
+        <iframe src="https://cmcmsu.info/1course/alg.schema.nam.htm" frameborder="0" width="820" height="330"></iframe>
+    </section>
+
+    <section class="slide" id="s1-8">
+        <h2>Лямбда-исчисление</h2>
+        <iframe src="https://www.jdoodle.com/execute-haskell-online" frameborder="0" width="820" height="330"></iframe>
+    </section>
+
+    <section class="slide" id="s1-9">
+        <div class="columns two">
+            <div class="left">
+                <h2>Принстонская</h2>
+                <img src="images/Fig 1.1.svg" alt="Принстонская архитектура" height="300">
+            </div>
+            <div class="right">
+                <h2>Гарвардская</h2>
+                <img src="images/Fig 1.2.svg" alt="Гарвардская архитектура" height="300">
+            </div>
+        </div>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/igsekor/cs2">Fork me on GitHub</a>
+        <a href="https://github.com/igsekor/cs2">GitHub</a>
     </footer>
 
     <div class="progress"></div>
