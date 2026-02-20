@@ -200,7 +200,7 @@
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="s1-10">
         <h2>Алгоритм Eвклида</h2>
         <div class="columns two">
             <figure>
@@ -217,7 +217,8 @@
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="s1-11">
+        <h2>Сложность алгоритмов</h2>
         <table>
             <thead>
                 <tr>
@@ -256,36 +257,37 @@
         </table>
     </section>
 
-    <section class="slide">
-        <table class="complexity">
+    <section class="slide" id="s1-12">
+        <h2>Сравнение структур данных</h2>
+        <table class="striped">
             <thead>
-                <th>
-                    <td>Data Structure</td>
-                    <td colspan="7">Time Complexity</td>
-                    <td>Space Complexity</td>
-                </th>
+                <tr>
+                    <th></th>
+                    <th colspan="8">Процессорное время</th>
+                    <th>Память</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th colspan="4">В среднем случае</th>
+                    <th colspan="4">В худшем случае</th>
+                    <th>В худшем случае</th>
+                </tr>
+                <tr>
+                    <th>Структура данных</th>
+                    <th>Доступ</th>
+                    <th>Поиск</th>
+                    <th>Вставка</th>
+                    <th>Удаление</th>
+                    <th>Доступ</th>
+                    <th>Поиск</th>
+                    <th>Вставка</th>
+                    <th>Удаление</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td colspan="4">Average</td>
-                    <td colspan="4">Worst</td>
-                    <td>Worst</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Access</td>
-                    <td>Search</td>
-                    <td>Insertion</td>
-                    <td>Deletion</td>
-                    <td>Access</td>
-                    <td>Search</td>
-                    <td>Insertion</td>
-                    <td>Deletion</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Array</td>
+                    <td>Массив</td>
                     <td>Θ(1)</td>
                     <td>Θ(n)</td>
                     <td>Θ(n)</td>
@@ -297,7 +299,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Stack</td>
+                    <td>Стек</td>
                     <td>Θ(n)</td>
                     <td>Θ(n)</td>
                     <td>Θ(1)</td>
@@ -309,7 +311,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Queue</td>
+                    <td>Очередь</td>
                     <td>Θ(n)</td>
                     <td>Θ(n)</td>
                     <td>Θ(1)</td>
@@ -321,7 +323,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Singly-Linked List</td>
+                    <td>Односвязный список</td>
                     <td>Θ(n)</td>
                     <td>Θ(n)</td>
                     <td>Θ(1)</td>
@@ -333,7 +335,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Doubly-Linked List</td>
+                    <td>Двусвязный список</td>
                     <td>Θ(n)</td>
                     <td>Θ(n)</td>
                     <td>Θ(1)</td>
@@ -345,7 +347,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Skip List</td>
+                    <td>Список с пропусками</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -357,7 +359,7 @@
                     <td>O(n log(n))</td>
                 </tr>
                 <tr>
-                    <td>Hash Table</td>
+                    <td>Хэш-таблица</td>
                     <td>N/A</td>
                     <td>Θ(1)</td>
                     <td>Θ(1)</td>
@@ -369,7 +371,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Binary Search Tree</td>
+                    <td>Бинарное дерево поиска</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -381,7 +383,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Cartesian Tree</td>
+                    <td>Картезианское дерево</td>
                     <td>N/A</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -393,7 +395,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>B-Tree</td>
+                    <td>B-Дерево</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -405,7 +407,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    Red-Black Tree
+                    <td>Красно-черное дерево</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -417,7 +419,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Splay Tree</td>
+                    <td>Splay-дерево</td>
                     <td>N/A</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -429,7 +431,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>AVL Tree</td>
+                    <td>АВЛ-дерево</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -441,7 +443,7 @@
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>KD Tree</td>
+                    <td>K-мерное дерево</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
                     <td>Θ(log(n))</td>
@@ -455,133 +457,129 @@
             </tbody>
         </table>
         <style>
-            .complexity td {
+            #s1-12 h2 {
+                font-size: 22px;
+            }
+            #s1-12 .striped td,
+            #s1-12 .striped th {
                 font-size: 12px;
             }
         </style>
     </section>
 
-    <section class="slide">
-        <table>
+    <section class="slide" id="s1-13">
+        <h2>Сравнение алгоритмов сортировки</h2>
+        <table class="striped">
             <thead>
                 <tr>
-                    <td>Algorithm</td>
-                    <td>Best</td>
-                    <td>Average</td>
-                    <td>Worst</td>
-                    <td>Worst</td>
+                    <th></th>
+                    <th colspan="3">Процессорное время</th>
+                    <th>Память</th>
+                </tr>
+                <tr>
+                    <th>Алгоритм</th>
+                    <th>В лучшем случае</th>
+                    <th>В среднем случае</th>
+                    <th>В худшем случае</th>
+                    <th>Память</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Quicksort</td>
+                    <td>Быстрая сортировка</td>
                     <td>Ω(n log(n))</td>
                     <td>Θ(n log(n))</td>
                     <td>O(n^2)</td>
                     <td>O(log(n))</td>
                 </tr>
                 <tr>
-                    <td>Mergesort</td>
+                    <td>Сортировка слиянием</td>
                     <td>Ω(n log(n))</td>
                     <td>Θ(n log(n))</td>
                     <td>O(n log(n))</td>
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Timsort</td>
+                    <td>Гибридный алгоритм сортировки</td>
                     <td>Ω(n)</td>
                     <td>Θ(n log(n))</td>
                     <td>O(n log(n))</td>
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Heapsort</td>
+                    <td>Пирамидальная сортировка</td>
                     <td>Ω(n log(n))</td>
                     <td>Θ(n log(n))</td>
                     <td>O(n log(n))</td>
                     <td>O(1)</td>
                 </tr>
                 <tr>
-                    <td>Bubble Sort</td>
+                    <td>Сортировка пузырьком</td>
                     <td>Ω(n)</td>
                     <td>Θ(n^2)</td>
                     <td>O(n^2)</td>
                     <td>O(1)</td>
                 </tr>
                 <tr>
-                    <td>Insertion Sort</td>
+                    <td>Сортировка вставкой</td>
                     <td>Ω(n)</td>
                     <td>Θ(n^2)</td>
                     <td>O(n^2)</td>
                     <td>O(1)</td>
                 </tr>
                 <tr>
-                    <td>Selection Sort</td>
+                    <td>Сортировка выбором</td>
                     <td>Ω(n^2)</td>
                     <td>Θ(n^2)</td>
                     <td>O(n^2)</td>
                     <td>O(1)</td>
                 </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section class="slide">
-        <table>
-            <thead>
                 <tr>
-                    <td>Algorithm</td>
-                    <td>Best</td>
-                    <td>Average</td>
-                    <td>Worst</td>
-                    <td>Worst</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tree Sort</td>
+                    <td>Сортировка с помощью двоичного дерева</td>
                     <td>Ω(n log(n))</td>
                     <td>Θ(n log(n))</td>
                     <td>O(n^2)</td>
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Shell Sort</td>
+                    <td>Сортировка Шелла</td>
                     <td>Ω(n log(n))</td>
                     <td>Θ(n(log(n))^2)</td>
                     <td>O(n(log(n))^2)</td>
                     <td>O(1)</td>
                 </tr>
                 <tr>
-                    <td>Bucket Sort</td>
+                    <td>Блочная сортировка</td>
                     <td>Ω(n+k)</td>
                     <td>Θ(n+k)</td>
                     <td>O(n^2)</td>
                     <td>O(n)</td>
                 </tr>
                 <tr>
-                    <td>Radix Sort</td>
+                    <td>Поразрядная сортировка</td>
                     <td>Ω(nk)</td>
                     <td>Θ(nk)</td>
                     <td>O(nk)</td>
                     <td>O(n+k)</td>
                 </tr>
                 <tr>
-                    <td>Counting Sort</td>
+                    <td>Сортировка подсчётом</td>
                     <td>Ω(n+k)</td>
                     <td>Θ(n+k)</td>
                     <td>O(n+k)</td>
                     <td>O(k)</td>
                 </tr>
-                <tr>
-                    <td>Cubesort</td>
-                    <td>Ω(n)</td>
-                    <td>Θ(n log(n))</td>
-                    <td>O(n log(n))</td>
-                    <td>O(n)</td>
-                </tr>
             </tbody>
         </table>
+        <style>
+            #s1-13 h2 {
+                font-size: 22px;
+            }
+            #s1-13 .striped td,
+            #s1-13 .striped th {
+                font-size: 12px;
+            }
+        </style>
     </section>
 
     <footer class="badge">
