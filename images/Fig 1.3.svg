@@ -33,4 +33,6 @@
 <path d="M456 550L456 579" stroke="#3D4161" stroke-width="2"/>
 <path d="M0 608L297 608" stroke="#3D4161" stroke-width="2"/>
 <path d="M135 578L592 578" stroke="#3D4161" stroke-width="2"/>
+<circle cx="296" cy="135" r="5" fill="#3D4161"/>
+<circle cx="456" cy="578" r="5" fill="#3D4161"/>
 </svg>

@@ -582,6 +582,159 @@
         </style>
     </section>
 
+    <section class="slide gray" id="s2-0">
+        <h2 class="shout">Типы данных и функции</h2>
+        <style>
+            #s2-0 .shout {
+                font-size: 3em;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="s2-1">
+        <h2>Hello world (языки низкого уровня)</h2>
+        <div class="columns two">
+            <div>
+                <div>
+                    <h3>Перфокарта</h3>
+                    <a href="https://codingstick.com/2022/11/04/hello-world-in-370-assembler/">
+                        <img src="https://codingstick.com/wp-content/uploads/2022/11/card_0000109A-1.png" alt="A 12-row/80-column IBM punched card from the mid-twentieth century" height="150">
+                    </a>
+                </div>
+                <div>
+                    <h3>Машинный код</h3>
+                    <pre>
+                        <code>BB 11 01 B9 0D 00 B4 0E 8A 07 43 CD 10 E2</code>
+                        <code>F9 CD 20 48 65 6C 6C 6F 2C 20 57 6F 72 6C 64 21</code>
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <h3>Ассемблер</h3>
+                <pre>
+                        <code>.MODEL SMALL</code>
+                        <code>.STACK 100h</code>
+                        <code>.DATA</code>
+                        <code>    HelloMessage DB ‘Hello, world!',13,10,'$'</code>
+                        <code>.CODE</code>
+                        <code>START:</code>
+                        <code>    mov ax,@data</code>
+                        <code>    mov ds,ax</code>
+                        <code>    mov ah,9</code>
+                        <code>    mov dx,OFFSET HelloMessage</code>
+                        <code>    int 21h</code>
+                        <code>    mov ah,4ch</code>
+                        <code>    int 21h</code>
+                        <code>END START</code>
+                </pre>
+            </div>
+        </div>
+        <style>
+            #s2-1 h3 {
+                font-size: 12px;
+            }
+
+            #s2-1 code {
+                font-size: 12px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="s2-2">
+        <h2>Hello world (языки высокого уровня)</h2>
+        <div class="columns two">
+            <div>
+                <h3>C++</h3>
+                <pre>
+                    <code>#include &lt;iostream&gt;</code>
+                    <code>int main(void) {</code>
+                    <code>    std::cout << "Hello, world!" << std::endl;</code>
+                    <code>    return 0;</code>
+                    <code>}</code>
+                </pre>
+                <h3>Java</h3>
+                <pre>
+                    <code>public class HelloWorld {</code>
+                    <code>    public static void main(String[] args) {</code>
+                    <code>        System.out.println("Hello, World!");</code>
+                    <code>    }</code>
+                    <code>}</code>
+                </pre>
+            </div>
+            <div>
+                <h3>PHP</h3>
+                <pre>
+                    <code>&lt;?php</code>
+                    <code>echo("Hello, World!\n");</code>
+                    <code>?&gt;</code>
+                </pre>
+                <h3>JavaScript</h3>
+                <pre>
+                    <code>console.log('Hello, World!');</code>
+                </pre>
+                <h3>Python</h3>
+                <pre>
+                    <code>print ("Hello, world!")</code>
+                </pre>
+            </div>
+        </div>
+        <style>
+            #s2-2 h3 {
+                font-size: 12px;
+            }
+
+            #s2-2 code {
+                font-size: 12px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="s2-3">
+        <h2>Какие бывают языки программирования</h2>
+        <ol>
+            <li>Модные или популярные языки программирования, и вышедшие из моды или активного применения</li>
+            <li>Компилируемые и интерпретируемые</li>
+            <li>Универсальные и специализированные</li>
+            <li>Алгоритмические языки и языки описания данных</li>
+            <li>Низкоуровневые и высокоуровневые</li>
+            <li>Объектно-ориентированные, функциональные, процедурные</li>
+        </ol>
+    </section>
+
+    <section class="slide" id="s2-4">
+        <h2>Типы переменных</h2>
+        <ul>
+            <li>Целые числа</li>
+            <li>С плавающей точкой</li>
+            <li>Символьные данные</li>
+            <li>Строки</li>
+            <li>Логические значения</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="s2-5">
+        <h2>Классы памяти</h2>
+        <ul>
+            <li>Автоматическая (локальная) переменная</li>
+            <li>Статическая переменная</li>
+            <li>Глобальная переменная</li>
+            <li>Регистровая переменная</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="s2-6">
+        <h2>Стек вызовов</h2>
+        <div class="columns two">
+            <p><strong>Стек вызовов</strong> — в теории вычислительных систем, LIFO-стек, хранящий информацию для возврата управления из подпрограмм (процедур, функций) в программу (или подпрограмму, при вложенных или рекурсивных вызовах) и (или) для возврата в программу из обработчика прерывания (в том числе при переключении задач в многозадачной среде).</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/CallStackFrame.png" alt="Типичный случай использование стека языком высокого уровня на примере вызова процедуры с аргументами «A, B, C» (с соглашениями вызова Паскаля) в сравнении с языком ассемблера" height="380">
+        </div>
+        <style>
+            #s2-6 p {
+                font-size: 14px;
+            }
+        </style>
+    </section>
+
     <footer class="badge">
         <a href="https://github.com/igsekor/cs2">GitHub</a>
     </footer>
